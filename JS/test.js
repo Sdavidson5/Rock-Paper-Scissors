@@ -24,7 +24,66 @@ function arraySwap(){
 console.log(arraySwap())
 */
 
+//11f
+/*
+var i = 0;
 
-for (let i = 5; i => 0; i -- ) {
+while (i<=10) {
   console.log(i);
+  i+= 2;
 }
+*/
+
+//11g
+/*
+const array = [1,2,3,4,5]
+
+for (let i = 0; i < array.length; i++) {
+  const element = array[i]+1;
+  console.log(element)
+} 
+  */
+//11h
+/*
+let array = [6,7,8,9]
+
+function plusOne(array){
+
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i]+1;
+    console.log(element)
+  } 
+}
+
+plusOne(array)
+*/
+
+//11i
+/*
+let array = [1,2,3,4,5];
+let num = [4];
+
+function addNum(array,num) {
+  for (let i = 0; i < array.length; i++) {
+    const element = +array[i]+ +num;
+    console.log(element)
+  } 
+}
+
+addNum(array,num)
+
+*/
+
+//11k
+let nums=[-2,-1,0,1,2];
+
+function countPositive(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i]>0) {
+      return console.log(nums[i])
+    }
+  } 
+  
+}
+
+countPositive(nums)

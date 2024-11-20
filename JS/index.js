@@ -1,5 +1,5 @@
 // Computer choice section
-function getComputerChoice() {
+/*function getComputerChoice() {
     let randomNumber = Math.random();
     if (randomNumber >=0 & randomNumber<= .33) {
         return 'rock'
@@ -45,4 +45,4 @@ function playRound(getHumanChoice,getComputerChoice){
 playRound();
 
 let humanScore = 0;
-let computerScore = 0;
+let computerScore = 0;*/
