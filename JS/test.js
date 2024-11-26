@@ -75,6 +75,7 @@ addNum(array,num)
 */
 
 //11k
+/*
 let nums=[-2,-1,0,1,2];
 
 function countPositive(nums) {
@@ -86,4 +87,34 @@ function countPositive(nums) {
   
 }
 
-countPositive(nums)
+countPositive(nums)*/
+
+//11o & 11p
+/*function test(){
+let array =['hello', 'world','search','good','search'];
+
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  if (array[i] === 'search') {
+    console.log(i);
+    break
+    }
+    
+}
+}
+test()*/
+
+//11q
+
+let array = ['green','red','blue'];
+let word = ['red'];
+
+function findIndex(array,word){
+  for(i = 0; i<array.length; i++){
+    if (array[i] === word){
+      return console.log(i)
+    } else console.log(-1)
+  }
+}
+
+findIndex(array,word)
