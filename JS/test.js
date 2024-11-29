@@ -105,7 +105,7 @@ for (let i = 0; i < array.length; i++) {
 test()*/
 
 //11q
-
+/*
 let array = ['green','red','blue'];
 let word = ['red'];
 
@@ -117,4 +117,59 @@ function findIndex(array,word){
   }
 }
 
-findIndex(array,word)
+findIndex(array,word)*/
+
+//11r
+/*
+function removeEgg() {
+  let foods = ['egg','apple','egg','egg','ham'];
+  let newFoods = [];
+
+  for (let i = 0; i < foods.length; i++) {
+    if (foods[i] === 'egg'){
+      continue
+    }
+      else newFoods.push(foods[i])
+  }
+
+  return console.log(newFoods)
+}
+
+removeEgg()*/
+
+function removeEgg() {
+  let foods = ['egg','apple','egg','egg','ham'];
+  let newFoods = [];
+  let count = 0;
+
+  for (let i = 0; i < foods.length; i++) {
+    if (foods[i] === 'egg'){
+      count++;
+      foods.splice(i,1);
+      i--;
+      if(count === 2){
+        break
+      }
+    }
+      else newFoods.push(foods[i])
+  }
+
+  return console.log(newFoods)
+}
+
+removeEgg()
+
+function removeFirstTwo(array, value) {
+  let count = 0; // Track how many times we've removed the value
+  for (let i = 0; i < array.length; i++) {
+      if (array[i] === value) {
+          count++;
+          array.splice(i, 1); // Remove the element at index i
+          i--; // Adjust index after removal
+          if (count === 2) break; // Stop after removing two occurrences
+      }
+  }
+  return array;
+}
+
+
